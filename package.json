@@ -1,6 +1,6 @@
 {
-  "name": "greeting_package",
-  "version": "1.0.0",
+  "name": "@joaopfsiqueira/greeting-package",
+  "version": "1.0.5",
   "description": "This package is for greeting a person during the day",
   "type": "module",
   "main": "lib/index.cjs",
