@@ -1,19 +1,27 @@
 {
-  "name": "ex-package",
+  "name": "greeting_package",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/joaopfsiqueira/ex-package"
-  },
+  "description": "This package is for greeting a person during the day",
   "type": "module",
+  "main": "lib/index.cjs",
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.cjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "codeef",
+  "license": "MIT",
   "devDependencies": {
     "rollup": "^4.17.2",
     "rollup-plugin-delete": "^2.0.0",
